@@ -1,41 +1,3 @@
-/***** FONTS *****/
-
-@font-face {
- font-family: "light";
- src: url("fonts/font-light.eot");
- src: url("fonts/font-light.eot?#iefix") format("embedded-opentype"),
-  url("fonts/font-light.woff2") format("woff2"),
-  url("fonts/font-light.woff") format("woff"),
-  url("fonts/font-light.ttf") format("truetype"),
-  url("fonts/font-light.svg#Light") format("svg");
- font-weight: normal;
- font-style: normal;
-}
-
-@font-face {
- font-family: "book";
- src: url("fonts/font-book.eot");
- src: url("fonts/font-book.eot?#iefix") format("embedded-opentype"),
-  url("fonts/font-book.woff2") format("woff2"),
-  url("fonts/font-book.woff") format("woff"),
-  url("fonts/font-book.ttf") format("truetype"),
-  url("fonts/font-book.svg#Book") format("svg");
- font-weight: normal;
- font-style: normal;
-}
-
-@font-face {
- font-family: "bold";
- src: url("fonts/font-bold.eot");
- src: url("fonts/font-bold.eot?#iefix") format("embedded-opentype"),
-  url("fonts/font-bold.woff2") format("woff2"),
-  url("fonts/font-bold.woff") format("woff"),
-  url("fonts/font-bold.ttf") format("truetype"),
-  url("fonts/font-bold.svg#Bold") format("svg");
- font-weight: normal;
- font-style: normal;
-}
-
 /***** GENERAL *****/
 
 html,
@@ -88,7 +50,9 @@ img.img-responsive {
 /***** HEADER *****/
 
 #header {
- font-family: "bold", Helvetica, Arial, sans-serif;
+ font-family: "Inter", sans-serif;
+ font-weight: 700;
+ font-weight: 700;
  position: absolute;
  width: 100%;
 }
@@ -135,17 +99,20 @@ img.img-responsive {
 }
 
 .cont p {
- font-family: "light", Helvetica, Arial, sans-serif;
+ font-family: "Inter", sans-serif;
+ font-weight: 300;
 }
 
 p.title,
 p.pretitle {
- font-family: "bold", Helvetica, Arial, sans-serif;
+ font-family: "Inter", sans-serif;
+ font-weight: 700;
 }
 
 p.title span,
 p.pretitle span {
- font-family: "book", Helvetica, Arial, sans-serif;
+ font-family: "Inter", sans-serif;
+ font-weight: 300;
 }
 
 .line_short {
@@ -169,7 +136,8 @@ p.pretitle span {
 /***** TOP *****/
 
 #top {
- font-family: "bold", Helvetica, Arial, sans-serif;
+ font-family: "Inter", sans-serif;
+ font-weight: 700;
  background: #000;
  height: 100vh;
 }
@@ -275,7 +243,8 @@ video {
 /***** QUOTES *****/
 
 #quotes {
- font-family: "bold", Helvetica, Arial, sans-serif;
+ font-family: "Inter", sans-serif;
+ font-weight: 700;
  background-color: #2a2b34;
  padding: 60px 0 30px;
  font-size: 15px;
@@ -298,14 +267,16 @@ video {
 }
 
 .quote {
- font-family: "light", Helvetica, Arial, sans-serif;
+ font-family: "Inter", sans-serif;
+ font-weight: 300;
 }
 
 /***** OUR WORK *****/
 
 #our-work {
  color: #fff;
- font-family: "bold", Helvetica, Arial, sans-serif;
+ font-family: "Inter", sans-serif;
+ font-weight: 700;
 }
 
 .work {
@@ -389,7 +360,8 @@ video {
 }
 
 .cycle-pager span {
- font-family: "bold", Helvetica, Arial, sans-serif;
+ font-family: "Inter", sans-serif;
+ font-weight: 700;
  font-size: 35px;
  width: 24px;
  height: 16px;
@@ -539,7 +511,8 @@ video {
 }
 
 p.paul {
- font-family: "bold", Helvetica, Arial, sans-serif;
+ font-family: "Inter", sans-serif;
+ font-weight: 700;
  margin-top: 0px !important;
  padding-bottom: 30px;
 }
@@ -597,7 +570,8 @@ p.paul {
 }
 
 .more_link {
- font-family: "bold", Helvetica, Arial, sans-serif;
+ font-family: "Inter", sans-serif;
+ font-weight: 700;
  display: inline-block;
  font-size: 24px;
  line-height: 24px;
@@ -633,7 +607,8 @@ p.paul {
 
 #services,
 #roles {
- font-family: "bold", Helvetica, Arial, sans-serif;
+ font-family: "Inter", sans-serif;
+ font-weight: 700;
  padding: 50px 0;
  background-color: #1d1c22;
  color: #fff;
@@ -668,7 +643,8 @@ p.paul {
 
 #services li,
 #roles li {
- font-family: "light", Helvetica, Arial, sans-serif;
+ font-family: "Inter", sans-serif;
+ font-weight: 300;
  text-transform: uppercase;
  margin-bottom: 5px;
  list-style: inside;
@@ -689,7 +665,8 @@ p.paul {
 /***** CONTACT *****/
 
 #contact {
- font-family: "bold", Helvetica, Arial, sans-serif;
+ font-family: "Inter", sans-serif;
+ font-weight: 700;
  background-color: #fff;
  color: #1d1c22;
  padding: 80px 0;
@@ -738,7 +715,8 @@ p.paul {
 .city {
  font-size: 13px;
  margin-bottom: 0px;
- font-family: "light", Helvetica, Arial, sans-serif;
+ font-family: "Inter", sans-serif;
+ font-weight: 300;
 }
 
 .info-container {
@@ -751,7 +729,8 @@ p.paul {
 
 .phone {
  background: url(../images/icon_mobile.png) no-repeat top left;
- font-family: "light", Helvetica, Arial, sans-serif;
+ font-family: "Inter", sans-serif;
+ font-weight: 300;
  background-position: 0px 1px;
  background-size: 14px 22px;
  display: inline-block;
@@ -761,7 +740,8 @@ p.paul {
 }
 .mail {
  background: url(../images/icon_envelope.png) no-repeat center left;
- font-family: "light", Helvetica, Arial, sans-serif;
+ font-family: "Inter", sans-serif;
+ font-weight: 300;
  background-size: 17px 12px;
  padding-left: 26px;
  display: inline-block;
@@ -785,7 +765,8 @@ p.paul {
 /***** FOOTER *****/
 
 #footer {
- font-family: "light", Helvetica, Arial, sans-serif;
+ font-family: "Inter", sans-serif;
+ font-weight: 300;
  font-size: 10px;
  text-align: left;
  padding-bottom: 30px;
