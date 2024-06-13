@@ -65,7 +65,7 @@ img.img-responsive {
 /*** menu ***/
 
 #menu {
- padding-top: 42px;
+ padding-top: 90px;
 }
 
 #menu nav li a {
@@ -106,20 +106,21 @@ img.img-responsive {
 p.title,
 p.pretitle {
  font-family: "Inter", sans-serif;
- font-weight: 700;
+ font-weight: 300;
+
 }
 
 p.title span,
 p.pretitle span {
  font-family: "Inter", sans-serif;
- font-weight: 300;
+ font-weight: 600;
 }
 
 .line_short {
  border: none;
  background: #fff;
  margin: 25px auto;
- height: 4px;
+ height: 2px;
  width: 47px;
 }
 
@@ -147,7 +148,7 @@ p.pretitle span {
 }
 
 .top_title {
- max-width: 90%;
+ max-width: 100%;
  height: auto;
  max-height: 100%;
 }
@@ -245,8 +246,8 @@ video {
 #quotes {
  font-family: "Inter", sans-serif;
  font-weight: 700;
- background-color: #2a2b34;
- padding: 60px 0 30px;
+ background-color: #000000;
+ padding: 100px 0 100px;
  font-size: 15px;
  margin-top: 50px;
  color: #fff;
@@ -323,6 +324,10 @@ video {
  background: url("../images/slide_06.jpg") no-repeat center center;
 }
 
+.work-7 {
+ background: url("../images/slide_09.jpg") no-repeat center center;
+}
+
 #prev,
 #next {
  display: inline-block;
@@ -387,24 +392,261 @@ video {
 
 /***** CLIENTS *****/
 
-#clients {
- background-color: #353842;
- padding: 80px 0 0;
+
+
+
+#clients-startups {
+ background-color: #000000;
+ padding: 10px 0 0px;
  color: #fff;
 }
+
+#clients-startups-row {
+ background-color: #000000;
+ padding: 0px 0 0px;
+ color: #fff;
+}
+
+#clients-vcs {
+ background-color: #000000;
+ padding: 70px 0 180px;
+    margin-bottom: 30px;
+ color: #fff;
+}
+
+
+
+#clients {
+ background-color: #000000;
+ padding: 150px 0 50px;
+ color: #fff;
+}
+
+
 
 #clients.inner {
  padding-bottom: 80px;
 }
 
-#clients .col-md-3 {
+#clients .col-md-2 {
  padding: 0 10px;
 }
 
 .client {
- border: solid 1px #3f424b;
- margin-top: 20px;
+ border: solid 0px #3f424b;
+ background-color: #131313;
+ margin-top: 30px;
+ height: 150px;
+ padding: 45px 0;
+ 
 }
+
+.client-virgin {
+ border: solid 0px #3f424b;
+ background-color: #131313;
+ margin-top: 30px;
+ height: 150px;
+ padding: 25px 0;
+ 
+}
+
+
+.client-udacity {
+ border: solid 0px #3f424b;
+ background-color: #131313;
+ margin-top: 10px;
+ height: 150px;
+ padding: 58px 0;
+ 
+}
+
+
+.client-digits {
+ border: solid 0px #3f424b;
+ background-color: #131313;
+ margin-top: 10px;
+ height: 150px;
+ padding: 55px 0;
+ 
+}
+
+.client-agent {
+ border: solid 0px #3f424b;
+ background-color: #131313;
+ margin-top: 10px;
+ height: 150px;
+ padding: 58px 0;
+ 
+}
+
+
+.client-spekit {
+ border: solid 0px #3f424b;
+ background-color: #131313;
+ margin-top: 10px;
+ height: 150px;
+ padding: 53px 0;
+ 
+}
+
+.client-whyline {
+ border: solid 0px #3f424b;
+ background-color: #131313;
+ margin-top: 10px;
+ height: 150px;
+ padding: 40px 0;
+ 
+}
+
+
+
+.client-elation {
+ border: solid 0px #3f424b;
+ background-color: #131313;
+ margin-top: 10px;
+ height: 150px;
+ padding: 45px 0;
+ 
+}
+
+
+.client-20vc {
+ border: solid 0px #3f424b;
+ background-color: #131313;
+ margin-top: 30px;
+ height: 150px;
+ padding: 52px 0;
+ 
+}
+
+
+.client-wb {
+ border: solid 0px #3f424b;
+ background-color: #131313;
+ margin-top: 30px;
+ height: 150px;
+ padding: 60px 0;
+ 
+}
+
+
+
+.client-wc {
+ border: solid 0px #3f424b;
+ background-color: #131313;
+ margin-top: 30px;
+ height: 150px;
+ padding: 40px 0;
+ 
+}
+
+.client-crashlytics {
+ border: solid 0px #3f424b;
+ background-color: #131313;
+ margin-top: 30px;
+ height: 150px;
+ padding: 50px 0;
+ 
+}
+
+
+.client-fabric {
+ border: solid 0px #3f424b;
+ background-color: #131313;
+ margin-top: 30px;
+ height: 150px;
+ padding: 45px 0;
+ 
+}
+
+
+
+.client-bx {
+ border: solid 0px #3f424b;
+ background-color: #131313;
+ margin-top: 30px;
+ height: 150px;
+ padding: 45px 0;
+ 
+}
+
+.testie  {
+ background-color: aqua;
+    padding: 50px 0;
+ 
+}
+
+
+
+
+.client-walmart {
+ border: solid 0px #3f424b;
+ background-color: #131313;
+ margin-top: 30px;
+ height: 150px;
+ padding: 50px 0;
+ 
+}
+
+.client-danone {
+ border: solid 0px #3f424b;
+ background-color: #131313;
+ margin-top: 30px;
+ height: 150px;
+ padding: 35px 0;
+ 
+}
+
+
+.client-zara {
+ border: solid 0px #3f424b;
+ background-color: #131313;
+ margin-top: 30px;
+ height: 150px;
+ padding: 45px 0;
+ 
+}
+
+.client-gp {
+ border: solid 0px #3f424b;
+ background-color: #131313;
+ margin-top: 30px;
+ height: 150px;
+ padding: 60px 0;
+ 
+}
+
+
+.client-webs {
+ border: solid 0px #3f424b;
+ background-color: #131313;
+ margin-top: 30px;
+ height: 150px;
+ padding: 40px 0;
+ 
+}
+
+.client-pts {
+ border: solid 0px #3f424b;
+ background-color: #131313;
+ margin-top: 30px;
+ height: 150px;
+ padding: 35px 0;
+ 
+}
+
+
+.client-mall {
+ border: solid 0px #3f424b;
+ background-color: #131313;
+ margin-top: 30px;
+ height: 150px;
+ padding: 30px 0;
+ 
+}
+
+
+
 
 .client_logo {
  background-image: url("../images/logo_sprite.png");
@@ -481,6 +723,109 @@ video {
  background-position: center -1500px;
 }
 
+
+/***** MEDIA EXPOSURE *****/
+
+#mediaxp {
+ background-color: #ffffff;
+ padding: 150px 0 150px;
+ color: #000000;
+}
+
+#mediaxp.inner {
+ padding-bottom: 80px;
+}
+
+#mediaxp .col-md-3 {
+ padding: 0 10px;
+}
+
+.mediaxp {
+ border: solid 1px #3f424b;
+ margin-top: 20px;
+}
+
+.mediaxp_logo {
+ background-image: url("../images/logo_sprite.png");
+ margin: 5px auto;
+ text-align: center;
+ display: inline-block;
+}
+
+.coca-cola {
+ background-position: center 0px;
+}
+
+.greenpeace {
+ background-position: center -100px;
+}
+
+.sony {
+ background-position: center -200px;
+}
+
+.twitter {
+ background-position: center -300px;
+}
+
+.twitter {
+ background-position: center -300px;
+}
+
+.crashlytics {
+ background-position: center -400px;
+}
+
+.patriots {
+ background-position: center -500px;
+}
+
+.fabric {
+ background-position: center -600px;
+}
+
+.walmart {
+ background-position: center -700px;
+}
+
+.whyline {
+ background-position: center -800px;
+}
+
+.virgin {
+ background-position: center -900px;
+}
+
+.ustrendy {
+ background-position: center -1000px;
+}
+
+.danone {
+ background-position: center -1100px;
+}
+
+.webs {
+ background-position: center -1200px;
+}
+
+.photels {
+ background-position: center -1300px;
+}
+
+.dotspin {
+ background-position: center -1400px;
+}
+
+.bepots {
+ background-position: center -1500px;
+}
+
+
+
+
+
+
+
 /***** PHILOSOPHY *****/
 
 /***** HISTORY *****/
@@ -500,8 +845,10 @@ video {
 #philosophy .line_short,
 #philosophy .line_big,
 #story .line_short,
+#mediaxp .line_short,
 #story .line_big {
- background-color: #1d1c22;
+    
+ background-color: #000;
  margin-top: 15px;
 }
 
@@ -537,9 +884,9 @@ p.paul {
 /***** INSIGHTS *****/
 
 #agency {
- padding: 100px 0;
+ padding: 150px 0;
  background-color: #fff;
- color: #1d1c22;
+ color: #000000;
 }
 
 #insights {
@@ -669,7 +1016,7 @@ p.paul {
  font-weight: 700;
  background-color: #fff;
  color: #1d1c22;
- padding: 80px 0;
+ padding: 100px 0;
 }
 
 #contact .line_short {
@@ -1097,6 +1444,8 @@ p.paul {
   font-size: 17px;
   letter-spacing: 1px;
  }
+ 
+ 
 
  .work_title {
   font-size: 30px;
@@ -1126,8 +1475,8 @@ p.paul {
  }
 
  .work_logo {
-  max-height: 50px;
-  max-width: 200px;
+  max-height: 100px;
+  max-width: 400px;
   height: auto;
   width: auto;
  }
@@ -1266,6 +1615,7 @@ p.paul {
  .img-cont {
   height: 45vh;
   margin-bottom: 100px;
+     margin-top: 80px;
  }
 
  #top p {
@@ -1305,7 +1655,6 @@ p.paul {
 
  .cont p {
   font-size: 17px;
-  opacity: 0.75;
   letter-spacing: 0;
   max-width: 80%;
   margin: 30px auto;
@@ -1326,14 +1675,47 @@ p.paul {
 
  p.pretitle {
   font-size: 18px;
-  letter-spacing: 1px;
+  letter-spacing: 10px;
+ }
+    
+     p.pretitle9 {
+  font-size: 12px;
+         font-weight: 400;
+  letter-spacing: 5px;
+         color: dimgray;
+ }
+    
+         p.pretitle8 {
+  font-size: 12px;
+         font-weight: 300;
+  letter-spacing: 5px;
+ }
+
+             p.pretitle8 span {
+  font-size: 12px;
+         font-weight: 900;
+  letter-spacing: 5px;
+ }
+
+
+p.pretitle-small {
+  font-size: 12px;
+  letter-spacing: 5px;
+    color: #ffffff;
+ }
+    
+    p.pretitle-inbox {
+  font-size: 9px;
+        margin-top: 20px;
+  letter-spacing: 4px;
+    color: dimgray;
  }
 
  .work_title {
-  font-size: 50px;
-  line-height: 60px;
+  font-size: 60px;
+  line-height: 70px;
   letter-spacing: -2px;
-  max-width: 75%;
+  max-width: 95%;
   margin: 50px auto;
  }
 
@@ -1354,12 +1736,28 @@ p.paul {
  }
 
  .work_logo {
-  max-height: 60px;
-  max-width: 300px;
+  max-height: 70px;
+  max-width: 320px;
+  height: auto;
+  width: auto;
+ }
+    
+     .work_logo2 {
+  max-height: 120px;
+  max-width: 550px;
   height: auto;
   width: auto;
  }
 
+     .work_logo3 {
+  max-height: 90px;
+  max-width: 450px;
+  height: auto;
+  width: auto;
+ }
+
+
+    
  .cycle-pager {
   bottom: 30px;
  }
@@ -1367,7 +1765,7 @@ p.paul {
  .client_logo {
   background-size: 100%;
   width: 156px;
-  height: 100px;
+  height: 150px;
  }
 
  .copy,
@@ -1427,7 +1825,8 @@ p.paul {
  }
 
  p.title {
-  font-size: 48px;
+  font-size: 60px;
+     line-height: 110%;
   letter-spacing: -2px;
  }
 
@@ -1477,9 +1876,9 @@ p.paul {
 
 @media (min-width: 1200px) {
  #top {
-  min-height: 720px;
+  min-height: 1000px;
   padding-top: 25vh;
-  padding-bottom: 100px;
+  padding-bottom: 130px;
  }
 
  #our-work,

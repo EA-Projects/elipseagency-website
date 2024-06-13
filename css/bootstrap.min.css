@@ -1798,7 +1798,7 @@ pre code {
 	width: 33.33333333%
 }
 .col-md-3 {
-	width: 25%
+	
 }
 .col-md-2 {
 	width: 16.66666667%
@@ -3563,7 +3563,7 @@ textarea.input-group-sm>.form-control, textarea.input-group-sm>.input-group-addo
 }
 @media (min-width:768px) {
 .navbar-header {
-	float: left
+
 }
 }
 .navbar-collapse {
