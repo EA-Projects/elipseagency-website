@@ -26,71 +26,73 @@ $(document).ready(function() {
         }, 700);
     });
     
-    
-    $( '#ri-grid' ).gridrotator( {
-        rows : 4,
-        columns : 4,
-        slideshow : true,
-        maxStep : 1,
-        interval : 1500,
-        animType : 'rotateTop',
-        animSpeed : 750,
-        preventClick : true,
-        nochange : static_mobile,
-        w1024 : {
-            rows : 4,
-            columns : 4
-        },
-        w768 : {
-            rows : 4,
-            columns : 4
-        },
-        w480 : {
-            rows : 3,
-            columns : 3
-        },
-        w320 : {
-            rows : 1,
-            columns : 1
-        },
-        w240 : {
-            rows : 2,
-            columns : 2
-        }
-    } );
+    if ($('#ri-grid').length) {
+      $( '#ri-grid' ).gridrotator( {
+          rows : 4,
+          columns : 4,
+          slideshow : true,
+          maxStep : 1,
+          interval : 1500,
+          animType : 'rotateTop',
+          animSpeed : 750,
+          preventClick : true,
+          nochange : static_mobile,
+          w1024 : {
+              rows : 4,
+              columns : 4
+          },
+          w768 : {
+              rows : 4,
+              columns : 4
+          },
+          w480 : {
+              rows : 3,
+              columns : 3
+          },
+          w320 : {
+              rows : 1,
+              columns : 1
+          },
+          w240 : {
+              rows : 2,
+              columns : 2
+          }
+      } );
+    }
 
-    
-    $( '#ri-grid-mobile' ).gridrotator( {
-        rows : 3,
-        columns : 3,
-        slideshow : true,
-        maxStep : 1,
-        interval : 2000,
-        animType : 'rotateTop',
-        animSpeed : 500,
-        preventClick : true,
-        nochange : static_mobile,
-        w1024 : {
-            rows : 3,
-            columns : 3
-        },
-        w768 : {
-            rows : 3,
-            columns : 3
-        },
-        w480 : {
-            rows : 3,
-            columns : 3
-        },
-        w320 : {
-            rows : 3,
-            columns : 3
-        },
-        w240 : {
-            rows : 3,
-            columns : 3
-        }
-    } );
+    if ($('#ri-grid-mobile').length) {
+      $( '#ri-grid-mobile' ).gridrotator( {
+          rows : 3,
+          columns : 3,
+          slideshow : true,
+          maxStep : 1,
+          interval : 2000,
+          animType : 'rotateTop',
+          animSpeed : 500,
+          preventClick : true,
+          nochange : static_mobile,
+          w1024 : {
+              rows : 3,
+              columns : 3
+          },
+          w768 : {
+              rows : 3,
+              columns : 3
+          },
+          w480 : {
+              rows : 3,
+              columns : 3
+          },
+          w320 : {
+              rows : 3,
+              columns : 3
+          },
+          w240 : {
+              rows : 3,
+              columns : 3
+          }
+      } );
+    }
     
     
     // Old scroll
@@ -154,13 +156,26 @@ $(document).ready(function() {
                 columns : 2
             }
         } );
-
-    
-    
-    
-    
-    
     */
+
+  $('#contact-form').on('submit', function(e) {
+    e.preventDefault();
+
+    var form = $(this);
+    var url = form.attr('action');
+    
+    $.ajax({
+      type: 'POST',
+      url: url,
+      data: form.serialize(),
+      success: function(response) {
+        window.location.href = '/thank-you.html';
+      },
+      error: function(response) {
+        window.location.href = '/thank-you.html';
+      }
+    });
+  });
     
 });
 
