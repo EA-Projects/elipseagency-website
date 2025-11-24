@@ -20,28 +20,6 @@ a:focus {
   text-decoration: none;
 }
 
-.cta-area{
-  text-align: center;
-}
-
-.button{
-  display: inline-block;
-  font-size: 12px;
-  line-height: 140%;
-  font-weight: 500;
-  padding: 12px 25px;
-  text-transform: uppercase;
-  letter-spacing: .08em;
-  color: #fff;
-  background-color: #000;
-  border: 2px solid #000;
-  transition: all .4s ease-in-out;
-  &:hover{
-    color: #000;
-    background-color: #FFF;
-  }
-}
-
 .container {
   max-width: 999px;
   padding-left: 15px;
@@ -756,9 +734,6 @@ video {
   padding: 100px 0;
   color: #000000;
   overflow: hidden;
-  .cta-area{
-    margin-top: 60px;
-  }
 }
 
 #mediaxp.inner {
@@ -975,7 +950,7 @@ p.paul {
 /***** INSIGHTS *****/
 
 #agency {
-  padding: 100px 0;
+  padding: 100px 0 70px;
   background-color: #fff;
   color: #000000;
   @media (max-width:425px){
@@ -1154,6 +1129,11 @@ p.paul {
         max-width: 420px;
         border-right: none;
       }
+      p {
+        display: flex;
+        gap: 12px;
+        align-items: center;
+      }
     }
     @media (max-width: 768px) {
   .contact-item {
@@ -1167,83 +1147,7 @@ p.paul {
   padding-top: 5px !important;
 }
 
-.contact-panel.last .mail {
-}
 
-#contact{
-  &.is-inner-page{
-    background-color: #000;
-    min-height: calc(100vh - 84px);
-    p, a{
-      color: #FFF;
-    }
-    hr{
-      background-color: #d2d2d2;
-    }
-    form{
-      max-width: 500px;
-      margin: 50px auto 0;
-      background-color: #fff;
-      padding: 40px;
-      .row-group{
-        display: flex;
-        align-items: center;
-        gap: 20px;
-        margin-bottom: 20px;
-        .input-group{
-          text-align: left;
-          flex: 1;
-          label{
-            display: block;
-            text-transform: uppercase;
-            font-size: 10px;
-            letter-spacing: .2em;
-          }
-          input:not(.button),textarea{
-            width: 100%;
-            min-width: 100%;
-            max-height: 100px;
-            resize: none;
-            padding: 5px 8px;
-            border: 1px solid #d2d2d2;
-            outline: 0;
-            box-shadow: none;
-            font-weight: 400;
-            transition: all .4s ease-in-out;
-            &:hover{
-              border-color: #000;
-            }
-          }
-          textarea{
-            min-height: 100px;
-          }
-          &.is-full{
-            text-align: center;
-            .button{
-              width: 100%;
-            }
-          }
-        }
-        &.is-last{
-          margin-bottom: 0;
-        }
-      }
-    }
-    &.is-thank-you{
-      display: flex;
-      align-items: center;
-      .title{
-        max-width: 700px;
-        margin: 0 auto 30px;
-      }
-      .description{
-        font-size: 16px;
-        line-height: 140%;
-        font-weight: 300;
-      }
-    }
-  }
-}
 
 .map {
   margin-bottom: 10px;
@@ -1270,29 +1174,29 @@ p.paul {
 }
 
 .phone {
-  background: url(../images/icon_mobile.png) no-repeat top left;
-  font-family: "Inter", sans-serif;
-  font-weight: 300;
+ /* background: url(../images/phone.svg) no-repeat top left;
   background-position: 0px 1px;
   background-size: 14px 22px;
+  padding-left: 27px; */
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
   display: inline-block;
-  padding-left: 27px;
   line-height: 24px;
 }
 
 .mail {
-  background: url(../images/icon_envelope.png) no-repeat center left;
+  /* background: url(../images/mail.svg) no-repeat center left;
+    background-size: 17px 12px;
+  padding-left: 26px;*/
   font-family: "Inter", sans-serif;
   font-weight: 300;
-  background-size: 17px 12px;
-  padding-left: 26px;
+
   display: inline-block;
   line-height: 22px;
   /* height: 24px; */
 }
-
 .is-location {
-  background: url(../images/location.svg) no-repeat center left;
+  /* background: url(../images/location.svg) no-repeat center left;*/
 
 }
 
@@ -1317,7 +1221,7 @@ p.paul {
   font-weight: 300;
   font-size: 10px;
   text-align: left;
-  padding: 30px 0;
+  padding-bottom: 30px;
   position: relative;
   background-color: #fff;
 }
@@ -1538,15 +1442,11 @@ p.paul {
         min-height: 60px;
         &.location {
           border: none;
-            .is-location {
-                background: url(../images/location.svg) no-repeat top left;
-                text-wrap: pretty;
-              }
+           
         }
       }
     }
   }
-
 
   .phone-block,
   .mail-block {
@@ -1556,6 +1456,10 @@ p.paul {
     justify-content: center;
   }
 
+  .phone-block {
+    width: 75%;
+    margin: auto;
+  }
 
   .contact-panel.last .mail {
     margin-top: 0;
@@ -1836,11 +1740,17 @@ p.paul {
     max-width: 100%;
     margin: 15px auto;
   }
-  .contact-panel.last {
+   .contact-panel.last {
     .contact-flex {
       .contact-item {
         width: 90%;
-      
+        &.location {
+          p {
+            align-items: flex-start;
+            padding: 20px 0;
+          }
+        }
+
       }
     }
   }
