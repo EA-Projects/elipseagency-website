@@ -1217,21 +1217,39 @@ p.paul {
 /***** FOOTER *****/
 
 #footer {
-  font-family: "Inter", sans-serif;
-  font-weight: 300;
-  font-size: 10px;
-  text-align: left;
-  padding-bottom: 30px;
-  position: relative;
-  background-color: #fff;
+font-family: "Inter", sans-serif;
+    font-weight: 300;
+    font-size: 10px;
+    text-align: left;
+    padding: 30px 0 40px;
+    position: relative;
+    background-color: #fff;
 }
 
 #footer p {
   height: 14px;
   line-height: 17px;
-  display: inline-block;
+  font-weight: 500;
+  margin-bottom: 0;
+  font-size: 10px;
 }
 
+#footer .inner-footer-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 10px;
+}
 #footer img {
   margin-right: 10px;
 }
