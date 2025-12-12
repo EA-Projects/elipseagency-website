@@ -88,11 +88,11 @@
     <div id="top" class="twitter_flight inner">
         <p class="inner_logo">
             <a href="index.html" class="hidden-xs">
-                <img src="images/logo.png" width="80" height="50" alt="EA / Elipse Agency" class="animate fadeInDown" >
+                <img src="images/logo.png" width="80" height="50" alt="121" class="animate fadeInDown" >
             </a>
         </p>
         <a href="index.html" class="hidden-sm hidden-md hidden-lg mobile_logo">
-            <img src="images/logo.png" width="64" height="40" alt="EA / Elipse Agency" class="animate fadeInDown" >
+            <img src="images/logo.png" width="64" height="40" alt="121" class="animate fadeInDown" >
         </a>
         
         <div class="container">

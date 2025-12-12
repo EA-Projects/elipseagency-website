@@ -105,7 +105,7 @@
 
                 <div class="navbar-header">
                     <a class="navbar-brand" href="#">
-                        <img src="images/ea.png" width="38" height="22" alt="EA / Elipse Agency" >
+                        <img src="images/ea.png" width="38" height="22" alt="121" >
                     </a>
                 </div>
 
@@ -130,7 +130,7 @@
     <!-- #top -->
     <div id="top">
         <a href="index.html" class="hidden-sm hidden-md hidden-lg mobile_logo">
-            <img src="images/logo.png" width="64" height="40" alt="EA / Elipse Agency" class="animate fadeInDown" >
+            <img src="images/logo.png" width="64" height="40" alt="121" class="animate fadeInDown" >
         </a>
         <div class="container">
             <div class="img-cont">

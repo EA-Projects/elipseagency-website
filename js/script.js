@@ -176,6 +176,50 @@ $(document).ready(function() {
       }
     });
   });
+
+  // Contact form details
+    if ($('#contact-form').length) {
+    $(function () {
+      const scriptURL =
+        'https://script.google.com/macros/s/AKfycbwEkN8rZlvy8H1cZSo_Lk7Ka7NFlQBm895CooXA7FHFzjgLl5n4YmkHVIvyj0aJXcH1SA/exec';
+      const form = document.getElementById('contact-form');
+  
+      form.addEventListener('submit', (e) => {
+        $('#contact-form').addClass('disabled');
+  
+        // Sending status
+        $('#contact-form').addClass('readonly');
+        $('#contact-form input.button').val("Sending Information");
+  
+        e.preventDefault();
+  
+        // We create a FormData object to include file and other fields
+        const formData = new FormData(form);
+  
+        fetch(scriptURL, { method: 'POST', body: formData })
+          .then((response) => {
+            $('#success-message').fadeIn();
+            $('#contact-form').addClass('readonly');
+            $('#contact-form input.button').val("Submitted");
+          })
+          .catch((error) => {
+            console.error('Error!', error.message);
+            $('#success-message').fadeOut();
+            $('#contact-form').removeClass('readonly');
+            $('#contact-form input.button').val("Submit Information");
+          });
+      });
+    });
+  }
+
+    jQuery($ => {
+    // Add checkbox value to text field 
+    // COFOUNDER SKILL RESULTS
+    let $checkServices = $(".services-group :checkbox").on("change", function() {
+      let string = $checkServices.filter(":checked").map((i, el) => el.value).get().join(", ");
+      $("#services-results").val(string && "" + string);
+    });
+  });
     
 });
 

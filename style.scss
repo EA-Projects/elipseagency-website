@@ -20,6 +20,25 @@ a:focus {
   text-decoration: none;
 }
 
+.button{
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  padding: 8px 24px;
+  border-radius: 4px;
+  border: 1px solid #FFFFFF;
+  box-shadow: none;
+  outline: none;
+  background-color: #FFFFFF;
+  color: #000000;
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+  &:hover{
+    background-color: #000000;
+    color: #FFFFFF;
+  }
+}
+
 .container {
   max-width: 999px;
   padding-left: 15px;
@@ -51,8 +70,7 @@ img.img-responsive {
 
 #header {
   font-family: "Inter", sans-serif;
-  font-weight: 700;
-  font-weight: 700;
+  font-weight: 600;
   position: absolute;
   width: 100%;
 }
@@ -107,7 +125,21 @@ p.title,
 p.pretitle {
   font-family: "Inter", sans-serif;
   font-weight: 300;
+  letter-spacing: 1px;
+}
 
+p.pretitle {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  letter-spacing: .1em;
+}
+
+p.pretitle-small {
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: .1em;
+  color: #ffffff;
 }
 
 p.title span,
@@ -236,20 +268,37 @@ p.pretitle span {
   }
 
   @media (max-width: 425px) {
+    padding-top: 70px;
+    padding-bottom: 70px;
+
     h1 {
-      font-size: 50px;
+      max-width: 270px;
+      margin: 20px auto;
+      font-size: 60px;
     }
 
     h2 {
       font-size: 15px;
-      line-height: 20px;
+      line-height: 130%;
+      max-width: 250px;
+      margin: 0 auto 10px;
     }
 
     .inner-content {
       img {
-        max-width: 40px;
+        margin-top: 40px;
+        max-width: 35px;
       }
     }
+
+    #footer{
+      padding-top: 0;
+    }
+
+    #footer img {
+      margin-right: 0;
+    }
+    
   }
 }
 
@@ -359,11 +408,14 @@ video {
 
 #quotes {
   font-family: "Inter", sans-serif;
-  font-weight: 700;
+  font-weight: 600;
   background-color: #000000;
   padding: 100px 0 100px;
   font-size: 15px;
   color: #fff;
+  .pretitle{
+    letter-spacing: .1em;
+  }
 }
 
 #quotes .cycle-pager {
@@ -390,7 +442,7 @@ video {
 #our-work {
   color: #fff;
   font-family: "Inter", sans-serif;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .work {
@@ -480,7 +532,7 @@ video {
 
 .cycle-pager span {
   font-family: "Inter", sans-serif;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 35px;
   width: 24px;
   height: 16px;
@@ -682,10 +734,10 @@ video {
     flex-wrap: wrap;
 
     >div {
-      padding: 0 5px;
+      padding: 0 2px;
 
       >div {
-        margin-top: 10px;
+        margin-top: 4px;
       }
     }
   }
@@ -718,11 +770,14 @@ video {
 @media (max-width: 425px) {
   .client {
     height: 80px;
-
+    &:hover {
+      border-color: #131313;
+      background-color: #131313;
+    }
     img {
       width: auto;
-      max-height: 35px;
-      max-width: 80px;
+      max-height: 30px;
+      max-width: 75px;
     }
   }
 }
@@ -1085,7 +1140,7 @@ p.paul {
 
 #contact {
   font-family: "Inter", sans-serif;
-  font-weight: 700;
+  font-weight: 600;
   background-color: #fff;
   color: #1d1c22;
   padding: 100px 0;
@@ -1103,6 +1158,128 @@ p.paul {
 
 #contact .col-md-12 {
   padding: 0 15px;
+}
+
+.wrapper-form{
+  max-width: 600px;
+  margin: 0 auto 50px;
+  background-color: #000000;
+  border-radius: 8px;
+  padding: 32px 32px;
+  .button{
+    width: 100%;
+  }
+  .title-divider{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-self: start;
+    gap: 16px;
+    margin: 48px 0 24px;
+    span{
+      background-color: #ffffff16;
+      height: 1px;
+      flex: 1;
+    }
+    h3{
+      color: #FFFFFF;
+      letter-spacing: -0.02em;
+      margin: 0;
+    }
+  }
+  input[type=checkbox], input[type=radio] {
+    border-color: #000000;
+    accent-color: #000000;
+  }
+  .row-field{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px 16px;
+    margin: 24px 0;
+    .field{
+      flex: 1;
+      label{
+        font-size: 10px;
+        color: #ffffff;
+        text-transform: uppercase;
+        letter-spacing: .12em;
+        font-weight: 600;
+        line-height: 130%;
+        width: 100%;
+        text-align: left;
+        span{
+          color: #ffffff30;
+          &.optional{
+            font-size: 7px;
+          }
+        }
+        cursor: pointer;
+        input,
+        textarea{
+          display: block;
+          width: 100%;
+          margin-top: 8px;
+          padding: 4px 8px;
+          border: 0;
+          outline: none;
+          box-shadow: none;
+          resize: none;
+          font-size: 13px;
+          line-height: 18px;
+          font-weight: 500;
+          color: #FFFFFF;
+          letter-spacing: 0;
+          background-color: #ffffff16;
+          border: 1px solid #ffffff16;
+          border-radius: 4px;
+          transition: all 0.4s ease-in-out;
+        }
+        textarea{
+          min-height: 80px;
+        }
+        &:hover,
+        &:focus{
+          input,
+          textarea{
+            border: 1px solid #ffffff24;
+          }
+        }
+      }
+      .radio-group{
+        margin-top: 15px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: start;
+        flex-wrap: wrap;
+        gap: 10px 0;
+        label{
+          display: flex;
+          align-content: center;
+          justify-content: flex-start;
+          gap: 8px;
+          width: 50%;
+          font-size: 13px;
+          font-weight: 400;
+          text-transform: none;
+          letter-spacing: 0.02em;
+          input{
+            width: auto;
+            margin-top: 0;
+          }
+        }
+      }
+    }
+    &:first-child{
+      margin-top: 0;
+    }
+    &:last-child{
+      margin-bottom: 0;
+    }
+    &.hidden-results{
+      // display: none;
+    }
+  }
 }
 
 .contact-panel {
@@ -1253,6 +1430,14 @@ font-family: "Inter", sans-serif;
 #footer img {
   margin-right: 10px;
 }
+
+  #footer{
+    .copy{
+      br{
+        display: none;
+      }
+    }
+  }
 
 .social a:hover {
   opacity: 0.7;
@@ -1486,7 +1671,7 @@ font-family: "Inter", sans-serif;
 
 @media (max-width: 767px) {
   #preloader {
-    background-size: 55px 34px;
+    background-size: 50px auto;
   }
 
   video {
@@ -1745,8 +1930,8 @@ font-family: "Inter", sans-serif;
   }
 
   p.pretitle {
-    font-size: 13px;
-    letter-spacing: 2px;
+    font-size: 12px;
+    letter-spacing: .1em;
   }
 
   .cont p.featured {
@@ -1775,13 +1960,132 @@ font-family: "Inter", sans-serif;
 }
 
 @media (max-width: 425px) {
+    #top .mobile_logo {
+    margin-bottom: 40px;
+  }
+
   p.title {
-    font-size: 25px;
+    font-size: 30px;
+    letter-spacing: -0.05em;
   }
 
   p.pretitle {
     margin-bottom: 20px;
   }
+
+  #agency {
+    .title{
+      max-width: 270px;
+      margin: 0 auto 10px;
+      br{
+        display: none;
+      }
+    }
+  }
+
+  .work {
+    padding-top: 12vh;
+    padding-bottom: 12vh;
+  }
+  .work_title{
+    font-size: 26px;
+    line-height: 125%;
+    letter-spacing: -1px;
+    margin: 40px auto;
+  }
+  .work_pretitle {
+    font-size: 10px;
+    letter-spacing: 2px;
+  }
+  .work .container img{
+    max-width: 170px;
+    max-height: 40px;
+  }
+
+  #clients,
+  #clients-vcs {
+    padding: 70px 0 70px;
+    .title{
+      max-width: 270px;
+      margin: 0 auto 10px;
+    }
+  }
+
+  #mediaxp{
+    padding: 70px 0;
+  }
+
+  #quotes{
+    padding: 70px 0;
+    p.pretitle-small{
+      font-size: 10px;
+      color: #2d2d2d;
+    }
+    p.pretitle{
+      margin-bottom: 0;
+      color: #2d2d2d;
+      span{
+        color: #FFFFFF;
+      }
+    }
+  }
+
+  .quote {
+    font-size: 16px;
+    margin: 30px auto;
+  }
+
+  #contact{
+    padding: 70px 0 30px;
+    .title{
+      max-width: 270px;
+      margin: 0 auto;
+    }
+  }
+
+  .mail-block, 
+  .phone-block{
+    width: 100%;
+    height: 50px;
+  }
+  
+  .contact-panel.last {
+    margin-top: 20px;
+    .contact-flex {
+      flex-direction: row;
+      .contact-item {
+        width: 49%;
+        min-height: 50px;
+        &:first-child{
+          border-right: 1px solid #d2d2d2;
+        }
+        p{
+          color: #1d1c22 !important;
+          padding: 5px 0;
+          margin: 0;
+          gap: 4px;
+          img{
+            width: 15px;
+          }
+        }
+        &.location {
+          p {
+            padding: 5px 0;
+            align-items: center;
+          }
+        }
+      }
+    }
+  }
+
+  #footer{
+    .copy{
+      br{
+        display: block;
+      }
+    }
+  }
+
 }
 
 @media (min-width: 768px) {
@@ -1868,13 +2172,6 @@ font-family: "Inter", sans-serif;
     font-size: 12px;
     font-weight: 900;
     letter-spacing: 5px;
-  }
-
-
-  p.pretitle-small {
-    font-size: 12px;
-    letter-spacing: 5px;
-    color: #ffffff;
   }
 
   p.pretitle-inbox {

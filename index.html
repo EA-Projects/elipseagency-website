@@ -14,7 +14,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
 
   <link href="css/bootstrap.min.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.css?v=1.0.3" rel="stylesheet">
   <link href="css/animate.css" rel="stylesheet">
 
   <script src="js/jquery.min.js"></script>
@@ -55,7 +55,7 @@
   <meta name="twitter:title" content="121. Professional digital, graphic and web design solutions worldwide.">
   <meta name="twitter:description" content="Design firm that combines inventive marketing and professional graphic, digital and web design with powerful multimedia productions and application development to integrate creativity and technology.">
   <meta name="twitter:creator" content="@121">
-  <meta name="twitter:image:src" content="http://www.elipseagency.com/images/ea_twitter.jpg">
+  <meta name="twitter:image:src" content="http://www.elipseagency.com/images/og-image.jpg">
 
   <!-- Open Graph data -->
   <meta property="og:title" content="121. Digital, graphic and web design for startups." />
@@ -481,7 +481,7 @@
         <p>Our award-winning designs give people an experience worth talking about,
           and have been extensively featured in major media publications.</p>
       </div>
-      <div class="marquee" tr-marquee-element="component" tr-marquee-speed="15">
+      <div class="marquee animate fadeIn" tr-marquee-element="component" tr-marquee-speed="15">
         <div class="container-marquee" tr-marquee-element="triggerhover">
           <div class="marquee-photos" tr-marquee-element="panel">
             <div class="brand">
@@ -537,7 +537,7 @@
           </div>
         </div>
       </div>
-      <div class="marquee" tr-marquee-element="component" tr-marquee-speed="10">
+      <div class="marquee animate fadeIn" tr-marquee-element="component" tr-marquee-speed="10">
         <div class="container-marquee" tr-marquee-element="triggerhover">
           <div class="marquee-photos" tr-marquee-element="panel">
             <div class="brand">
@@ -602,24 +602,24 @@
       <div class="cycle-slideshow" data-cycle-fx="fade" data-cycle-timeout="8000" data-cycle-speed="1000" data-cycle-slides="> div" data-cycle-pause-on-hover="false" data-cycle-manual-speed="300" data-cycle-auto-height="calc">
         <div class="col-xs-12 col-md-10 col-md-offset-1">
           <img src="images/crashlytics.png" alt="Crashlytics" width="165" height="43">
-          <p class="pretitle9">ACQUIRED BY TWITTER.</p>
+          <p class="pretitle-small">ACQUIRED BY TWITTER.</p>
           <p class="quote">“Design by 121 was the center of everything we did. It’s what got us into millions of apps and billions of devices in a short period of time.”</p>
           <img src="images/wayne_chang.png" alt="Wayne Chang" class="quote-img">
-          <p class="pretitle8"><span>WAYNE CHANG</span></br>CO-FOUNDER</p>
+          <p class="pretitle"><span>WAYNE CHANG</span></br>CO-FOUNDER</p>
         </div>
         <div class="col-md-10 col-md-offset-1">
           <img src="images/logo_fabric.png" alt="Google" width="140" height="44">
-          <p class="pretitle9">ACQUIRED BY GOOGLE.</p>
+          <p class="pretitle-small">ACQUIRED BY GOOGLE.</p>
           <p class="quote">"Captivating visual design and remarkable ease of use were key components of Fabric’s launch. 121 was critical in helping us achieve the user experience we wanted."</p>
           <img src="images/jeff_seibert.png" alt="Jeff Seibert" class="quote-img">
-          <p class="pretitle8"><span>JEFF SEIBERT</span></br>CO-FOUNDER</p>
+          <p class="pretitle"><span>JEFF SEIBERT</span></br>CO-FOUNDER</p>
         </div>
         <div class="col-md-10 col-md-offset-1">
           <img src="images/logo_whyline.png" alt="Whyline" width="89" height="45">
-          <p class="pretitle9">ACQUIRED BY CLEAR.</p>
+          <p class="pretitle-small">ACQUIRED BY CLEAR.</p>
           <p class="quote">"121 produced extraordinary results in a short period of time with minimal oversight needed. If you're in the market for a world-class digital agency, look no further."</p>
           <img src="images/michael_twersky.png" alt="Michael Twersky" class="quote-img">
-          <p class="pretitle8"><span>MICHAEL TWERSKY</span></br>CO-FOUNDER</p>
+          <p class="pretitle"><span>MICHAEL TWERSKY</span></br>CO-FOUNDER</p>
         </div>
         <p class="cycle-pager hidden-xs col-xs-12"></p>
       </div>
@@ -629,6 +629,7 @@
   </div>
   <!-- / quotes -->
   <!-- #contact -->
+
   <div id="contact" class="section">
     <div class="container">
       <p class="pretitle animate fadeInDown">LET’S GET STARTED</p>
@@ -637,9 +638,105 @@
       <div class="cont animate fadeIn">
         <p>At 121, we know each client is different and requires specific solutions. With 25+ years of partnering with the world's most innovative brands, we're here to fuel your growth.</p>
       </div>
-        <div class="col-md-12 animate fadeInUp">
-    <div class="contact-panel last">
-       <div class="contact-flex">
+      <div class="wrapper-form">
+        <form id="contact-form" action="">
+          <div class="row-field">
+            <div class="field">
+              <label for="name">
+                First Name <span>*</span>
+                <input type="text" name="name" id="name" required>
+              </label>
+            </div>
+            <div class="field">
+              <label for="last-name">
+                Last Name <span>*</span>
+                <input type="text" name="last-name" id="last-name" required>
+              </label>
+            </div>
+          </div>
+          <div class="row-field">
+            <div class="field">
+              <label for="email">
+                Work e-mail <span>*</span>
+                <input type="email" name="email" id="email" required>
+              </label>
+            </div>
+            <div class="field">
+              <label for="company">
+                Company <span>*</span>
+                <input type="text" id="company" name="company" required>
+              </label>
+            </div>
+          </div>
+          <div class="row-field">
+            <div class="field">
+              <label for="website">
+                Website URL <span class="optional">(optional)</span>
+                <input type="url" name="website" id="website">
+              </label>
+            </div>
+          </div>
+
+          <div class="title-divider">
+            <h3>Tell us more about the project</h3>
+            <span></span>
+          </div>
+
+          <div class="row-field">
+            <div class="field">
+              <label>What do you need help with?</label>
+              <div class="radio-group services-group checkbox-group">
+                <label for="graphic-design">
+                  <input type="checkbox" name="services" value="Graphic Design" id="graphic-design">
+                  Graphic Design
+                </label>
+
+                <label for="digital-design">
+                  <input type="checkbox" name="services" value="Digital Design" id="digital-design">
+                  Digital Design
+                </label>
+
+                <label for="growth-engine">
+                  <input type="checkbox" name="services" value="Growth Engine" id="growth-engine">
+                  Growth Engine
+                </label>
+
+                <label for="startup-advisory">
+                  <input type="checkbox" name="services" value="Startup Advisory" id="startup-advisory">
+                  Startup Advisory
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <div class="row-field hidden-results">
+            <div class="field">
+              <label>
+                <textarea name="services-results" id="services-results"></textarea>
+              </label>
+            </div>
+          </div>
+
+          <div class="row-field">
+            <div class="field">
+              <label for="message">
+                Message
+                <textarea name="message" id="message"></textarea>
+              </label>
+            </div>
+          </div>
+
+          <div class="row-field">
+            <div class="field">
+              <input type="submit" value="Submit" class="button">
+            </div>
+          </div>
+
+        </form>
+      </div>
+      <div class="col-md-12 animate fadeInUp">
+        <div class="contact-panel last">
+          <div class="contact-flex">
             <div class="contact-item">
               <div class="phone-block">
                 <p class="phone">
@@ -659,8 +756,8 @@
               </div>
             </div>
           </div>
-    </div>
-  </div>
+        </div>
+      </div>
     </div>
   </div>
   <!-- / contact -->
@@ -669,7 +766,7 @@
     <div class="container">
       <div class="inner-footer-content">
         <img src="images/one-twenty-one.png" alt="121" width="53" class="footer-logo">
-        <p class="copy">COPYRIGHT © 2025 ONE TWENTY ONE, INC. ALL RIGHTS RESERVED.</p>
+        <p class="copy">COPYRIGHT © <script>document.write(new Date().getFullYear())</script> ONE TWENTY ONE, INC. <br> ALL RIGHTS RESERVED.</p>
       </div>
     </div>
   </div>
