@@ -178,18 +178,18 @@ $(document).ready(function() {
   });
 
   // Contact form details
-    if ($('#contact-form').length) {
+    if ($('#main-form').length) {
     $(function () {
       const scriptURL =
-        'https://script.google.com/macros/s/AKfycbwEkN8rZlvy8H1cZSo_Lk7Ka7NFlQBm895CooXA7FHFzjgLl5n4YmkHVIvyj0aJXcH1SA/exec';
-      const form = document.getElementById('contact-form');
+        'https://script.google.com/macros/s/AKfycbzu-h4-UX4mGyQ0gcQd7CObfCLr0DSjlkNl60QZeuU8Q81i-VLrJKd-gqwrJVdDqwwD/exec';
+      const form = document.getElementById('main-form');
   
       form.addEventListener('submit', (e) => {
-        $('#contact-form').addClass('disabled');
+        $('#main-form').addClass('disabled');
   
         // Sending status
-        $('#contact-form').addClass('readonly');
-        $('#contact-form input.button').val("Sending Information");
+        $('#main-form').addClass('readonly');
+        $('#main-form input.button').val("Sending");
   
         e.preventDefault();
   
@@ -198,15 +198,15 @@ $(document).ready(function() {
   
         fetch(scriptURL, { method: 'POST', body: formData })
           .then((response) => {
-            $('#success-message').fadeIn();
-            $('#contact-form').addClass('readonly');
-            $('#contact-form input.button').val("Submitted");
+            $('#success-message').css("display", "flex").hide().fadeIn();
+            $('#main-form').addClass('readonly');
+            $('#main-form input.button').val("Submitted");
           })
           .catch((error) => {
             console.error('Error!', error.message);
             $('#success-message').fadeOut();
-            $('#contact-form').removeClass('readonly');
-            $('#contact-form input.button').val("Submit Information");
+            $('#main-form').removeClass('readonly');
+            $('#main-form input.button').val("Submit");
           });
       });
     });
